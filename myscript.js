@@ -45,3 +45,8 @@ function reverseWord(parola) {
         check = false;
     }
 }
+
+
+//a questo punto, ho creato la funzione che mi serve triggerare al click dell'event listener, quindi lo inserisco nel mio sistema
+
+//seleziono anche la zona adibita alla ricezione del messaggio da parte del programma per l'utente, cosi da terminare stamoando in pagina il risultato 
