@@ -14,10 +14,23 @@ Creare una funzione per capire se la parola inserita è palindroma
 const btn = document.getElementById("checkBtn");
 let parola = document.getElementById("wordInput").value;
 
+//seleziono luogo dove stampero il mio output
+let resultText = document.getElementById("resultContainer");
+
 btn.addEventListener("click", 
     function() {
         let parola = document.getElementById("wordInput").value;
         //console.log(parola);
+
+        reverseWord(parola);//richiamo la funzione che ho creato in precedenza
+
+        if (parola == '') {
+            resultText.innerHTML = 'Devi prima inserire una parola.';
+        } else if (check == true) {
+            resultText.innerHTML = 'La tua parola è palindroma.';
+        } else {
+            resultText.innerHTML = 'La tua parola NON è palindroma.';
+        }  //condizionale che mi permette di stampare in pagina l'output
     }
 );
 
